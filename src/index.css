@@ -15,3 +15,14 @@ body {
 h1 {
   font-family: "Courier New", monospace;
 }
+
+.search-form-input {
+  background-color: #e9e8e5;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  padding: 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  color: #847575;
+}
