@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/index.css" />
+    <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,11 +15,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form>
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city.."
             required
+            id="search-form-input"
             class="search-input"
           />
           <input type="submit" value="Search" class="search-button" />
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="current-city">Krefeld</h1>
+            <h1 class="current-city" id="city">Krefeld</h1>
             <p class="current-details">
               <strong>Sunny with Rainshowers</strong>
               <br />
@@ -81,5 +82,6 @@
      </p>
       </footer>
     </div>
+    <script src="src/main.js"></script>
   </body>
 </html>
