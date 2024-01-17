@@ -15,38 +15,38 @@
   <body>
     <div class="weather-app">
       <header>
-        <main>
-          <form class="search-form">
-            <input
-              type="search"
-              placeholder="Enter a city..."
-              required
-              class="search-form-input"
-            />
-            <input type="submit" value="Search" class="search-form-button" />
-          </form>
-        </main>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
       </header>
-      <div class="weather-app-data-left">
-        <h1 class="weather-app-city">
-          <span class="town">Krefeld</span>
-          <br />
-          <span class="conditions">Sunny with rainshowers</span>
-        </h1>
-        <div class="weather-app-details">
-          <p>
-            Tuesday 14:49
-            <br />
-            Humidity: 66%
-            <br />
-            Wind: 3.13km/h
-          </p>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="current-city">Krefeld</h1>
+            <p class="current-details">
+              <strong>Sunny with Rainshowers</strong>
+              <br />
+               <br />
+              Saturday: <strong>15:32 O'Clock</strong>
+              <br />
+              Humidity: <strong>87%</strong>
+              <br />
+              Wind: <strong>7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <span class="current-temperature-icon">🌦️</span
+            ><span class="current-temperature-value">24</span
+            ><span class="current-temperature-unit">°C</span>
+          </div>
         </div>
-      </div>
-      <div class="weather-app-data-right">
-        <div class="weather-app-emoji">🌦️</div>
-        <div class="weather-app-temperature">24°C</div>
-      </div>
+      </main>
       <footer class="footer">
         <div class="footer-left">
           This page was built by
@@ -68,6 +68,7 @@
             Netlify</a
           >
         </div>
+        </main>
         <div class="footer-right">
           <p>@ Selin Marketing 2024</p>
           <a href="https://selinmarketing.com/" target="_blank">
@@ -77,7 +78,7 @@
               class="logo"
             />
           </a>
-        </div>
+     </p>
       </footer>
     </div>
   </body>
