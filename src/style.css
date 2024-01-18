@@ -1,6 +1,9 @@
 body {
   background-color: #e9e8e5;
   font-family: "Montserrat", sans-serif;
+  background: url("./background5.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 a {
