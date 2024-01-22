@@ -94,6 +94,30 @@ h1 {
   color: #847575;
 }
 
+.weather-forecast {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  font-weight: bold;
+  color: #847575;
+}
+
+.weather-forecast-temperatures {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.weather-forecast-temperature-max {
+  color: #e9e8e5;
+}
+
+.weather-forecast-temperature-min {
+  color: #d0c6c0;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
