@@ -104,18 +104,28 @@ h1 {
   font-size: 16px;
   font-weight: bold;
   color: #847575;
+  align-items: center;
+}
+
+.weather-forecast-temperatures {
+  justify-content: center;
+  align-items: center;
 }
 
 .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
-  display: block;
-  margin: 0 auto;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  margin-left: -10px;
+  margin-right: -10px;
 }
 
 .weather-forecast-temperatures {
   font-size: 16px;
   font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  height: 100%;
 }
 
 .weather-forecast-temperature-max {

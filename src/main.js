@@ -84,12 +84,12 @@ function displayForecast(response) {
               src="${day.condition.icon_url}" class="weather-forecast-icon" 
             />
             <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperature-max">${Math.round(
-                day.temperature.maximum
-              )}</span>
-              <span class="weather-forecast-temperature-min">${Math.round(
-                day.temperature.minimum
-              )}</span>
+         <span class="weather-forecast-temperature-max">
+  ${Math.round(day.temperature.maximum)}&nbsp;°
+</span>
+<span class="weather-forecast-temperature-min">
+  ${Math.round(day.temperature.minimum)}&nbsp;°
+</span>
             </div>
           </div>
         </div>
