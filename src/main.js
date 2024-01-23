@@ -63,30 +63,29 @@ function getForecast(city) {
 function displayForecast(response) {
   console.log(response.data);
 
-  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day) {
     forecastHtml =
       forecastHtml +
       `
       <div class="row">
           <div class="col-2">
             <div class="weather-forecast-date">
-              ${day}
+              Tuesday
             </div>
             <img
-              src="https://www.svgrepo.com/show/433968/weather.svg"
+              src="{day.condition.icon_url}" />
               alt=""
               width="42"
             />
             <div class="weather-forecast-temperatures">
-              <span class="weather-forecast-temperature-max">
-                18°
-              </span>
-              <span class="weather-forecast-temperature-min">
-                12°
-              </span>
+              <span class="weather-forecast-temperature-max">${Math.round(
+                day.temperature.maximum
+              )}</span>
+              <span class="weather-forecast-temperature-min">${Math.round(
+                day.temperature.minimum
+              )}</span>
             </div>
           </div>
         </div>
